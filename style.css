@@ -1,0 +1,451 @@
+:root {
+  --main-text-color: #ffffff;
+  --second-text-color: #fcc42a;
+  --main-bg-color: #121212;
+}
+
+/* :root {
+  --main-text-color: #000000;
+  --second-text-color: #2a3cfc;
+  --main-bg-color: #ffffff;
+} */
+
+@font-face {
+  font-family: "Morganite";
+  src: url(./fonts/Morganite-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "NeueHaasGrotesk";
+  src: url(./fonts/HelveticaNeue.woff2) format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "NeueHaasGrotesk", sans-serif;
+  list-style: none;
+}
+
+body,
+html {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  overscroll-behavior: none;
+}
+
+h1 {
+  font-family: "Morganite";
+  letter-spacing: 2px;
+  font-size: 5rem;
+}
+
+h3 {
+  font-family: "Morganite";
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+  /* letter-spacing: 1px; */
+  font-family: "NeueHaasGrotesk";
+  font-style: normal;
+}
+
+a {
+  color: var(--main-text-color);
+}
+
+li {
+  line-height: 1.6rem;
+  text-transform: uppercase;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  padding: 80px 5% 2% 5%;
+  overflow: hidden;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+
+  background-color: var(--main-bg-color);
+  z-index: 1;
+}
+
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+.logo:hover {
+  color: var(--second-text-color);
+  cursor: pointer;
+}
+
+.nav-links {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  letter-spacing: 0;
+}
+
+.nav-links li:hover {
+  cursor: pointer;
+  color: var(--second-text-color);
+}
+
+/* Main  */
+
+main {
+  position: fixed;
+  inset: 0;
+}
+
+/* Scrollable div */
+.scrollable {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 1400px;
+  will-change: transform;
+}
+
+/* Hero */
+
+.welcome {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 400px;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+}
+
+.cta {
+  height: 2rem;
+  width: 50%;
+  cursor: pointer;
+}
+.cta:hover {
+  opacity: 0.5;
+}
+.cta h3 {
+  font-family: "Morganite";
+  font-weight: 400;
+  color: var(--second-text-color);
+}
+
+/* Projects */
+
+.projects-list {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.projects-list li {
+  position: relative;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #ffffff37;
+  z-index: 0;
+}
+
+.projects-list li:hover {
+  z-index: 2;
+  color: var(--second-text-color);
+}
+
+.projects-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 150px;
+  will-change: transform;
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  transition: background-image 0.5s, translate 0s, opacity 0.5s;
+  opacity: 0;
+}
+
+/* About  */
+
+.about-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  /* height: 100vh;
+  height: calc(var(--vh, 1vh) * 100); */
+}
+
+.about-container > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh;
+  height: calc(var(--vh, 1vh) * 80); */
+}
+
+.about-container > div:nth-child(1) {
+  padding-right: 2rem;
+  flex: 3;
+}
+
+.about-container > div:nth-child(2) {
+  align-items: center;
+  justify-content: center;
+}
+
+.resume {
+  margin-top: 1rem;
+  color: var(--second-text-color);
+}
+
+.bio-image {
+  height: 300px;
+  flex: 3;
+}
+
+.bio-image-outer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  /* overflow: hidden; */
+  border-radius: 10px;
+}
+
+.border {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 250px;
+  height: 250px;
+  border: 2px solid var(--second-text-color);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.bio-image-outer:hover .border {
+  transform: translate(-5%, -5%);
+}
+
+.bio-image-outer:hover .bio-image-inner {
+  filter: grayscale(0);
+}
+
+.bio-image-outer:hover .overlay {
+  opacity: 0;
+}
+
+.bio-image-inner {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  background-image: url(./images/conorbailey.png);
+  background-size: cover;
+  background-position: center;
+  max-width: 250px;
+  filter: grayscale(100%);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--second-text-color);
+  z-index: 1;
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.tech {
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tech li {
+  font-size: 0.8rem;
+  text-transform: none;
+}
+
+/* Contact */
+
+.contact-info {
+  width: 500px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.socials {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+i {
+  font-size: 1.8rem;
+}
+
+i:hover {
+  color: var(--second-text-color);
+}
+
+svg {
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+  transform: rotate(180deg);
+}
+
+svg:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    letter-spacing: 2px;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-weight: 200;
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-family: "Morganite";
+    letter-spacing: 2px;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+    /* letter-spacing: 1px; */
+    font-family: "NeueHaasGrotesk";
+    font-style: normal;
+  }
+
+  a {
+    color: var(--main-text-color);
+  }
+
+  li {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    width: 180px;
+  }
+  .nav-links li {
+    font-size: 10px;
+  }
+
+  .projects-image {
+    display: none;
+  }
+
+  .welcome {
+    width: 90%;
+  }
+
+  #about {
+    height: auto;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .bio-image {
+    flex: none;
+  }
+
+  .bio-image-outer {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    /* overflow: hidden; */
+    border-radius: 10px;
+  }
+
+  .bio-image-inner {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background-image: url(./images/conorbailey.png);
+    background-size: cover;
+    background-position: center;
+    max-width: 250px;
+    filter: grayscale(100%);
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+
+  .border {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--second-text-color);
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+}

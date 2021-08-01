@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Conor Bailey</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h3 onclick="clickLink(0)">CONOR BAILEY</h3>
+            </div>
+            <ul class="nav-links">
+                <li onclick="clickLink(1)">Projects</li>
+                <li onclick="clickLink(2)">About</li>
+                <li onclick="clickLink(3)">Contact</li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="projects-image"></div>
+        <div class="scrollable">
+            <section id="hero">
+                <div class="welcome">
+                    <p>Hi! Thanks for visiting my portfolio!</p><br>
+                    <p>Here you can see my work, read my blog posts and view my development tutorials.</p><br>
+                    <p>I love minimal clean web / app design. If you would like to know more or work with me, then please do not hesitate to contact me.</p><br>
+                    <div onclick="clickLink(1)" class="cta"><h3>VIEW WORK</h3></div>
+                </div>
+
+                <div class="hero-text">
+                    <h1>CONOR BAILEY</h1>
+                    <h2 class="portfolio-date">Portfolio</h2>
+                    <h2>Developer | Designer</h2>
+                </div>
+            </section>
+            <section id="projects">
+                <h1>PROJECTS</h1>
+                <ul class="projects-list"></ul>
+            </section>
+            <section id="about">
+                <h1>ABOUT</h1>
+                <div class="about-container">
+                    <div class="bio">
+                            <p>I am a Full Stack Developer and graduate of the Udacity Full Stack Web Developer and Data Analysis Nanodegree programs.</p></br>
+                            <p>I have a large passion for learning, technology and software development / engineering. I am currently documenting my journey on Youtube where I regularly post tutorials covering multiple programming languages and technologies.</p></br>
+                            <p>In my spare time I'm also interested in music production and generative art. Please don't hesitate to contact me if you require further information.</p></br>
+                            <p>I am comfortable working with the following technologies.</p>
+                            <div class="tech">
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>React</li>
+                                    <li>Node.js</li>
+                                    <li>SQL Server</li>
+                                </ul>
+                                <ul>
+                                    
+                                    <li>Postgresql</li>
+                                    <li>Three.js</li>
+                                    <li>Python</li>
+                                </ul>
+                            </div>
+                            <div class="attachments">
+                                <div class="resume">
+                                    <h3>RESUME</h3>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="bio-image">
+                        <div class="bio-image-outer">
+                            <div class="border"></div>
+                            <div class="overlay"></div>
+                           <div class="bio-image-inner"></div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <section id="contact">
+                <h1>CONTACT</h1>
+                <div class="contact-info">
+                    <p>If you would like any further information regarding freelance work or coding/development queries in general then please do not hesitate to contact me and i'll try my best to get back to you!</p></br>
+                    <h4>CONBAILEY90@GMAIL.COM</h4>
+                    <div class="socials">
+                        <a href=""><i class="fab fa-github"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <svg onclick="clickLink(0)" xmlns="http://www.w3.org/2000/svg" width="10%" height="10%" viewBox="0 0 63.012 63.012"><g transform="translate(0 0)" fill="none" stroke="#fcc42a" stroke-width="2"><ellipse cx="31.506" cy="31.506" rx="31.506" ry="31.506" stroke="none"></ellipse><ellipse cx="31.506" cy="31.506" rx="30.506" ry="30.506" fill="none"></ellipse></g><g transform="translate(21.546 46.941) rotate(-90)"><path d="M0,0H31.253" transform="translate(31.253 9.495) rotate(180)" fill="none" stroke="#fcc42a" stroke-width="2"></path><path d="M0,0,8.286,10.164,0,19.43" transform="translate(8.614 19.43) rotate(180)" fill="none" stroke="#fcc42a" stroke-width="2"></path></g></svg>
+            </section>
+        </div>  
+    </main>
+    
+    <script src="./projects.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
