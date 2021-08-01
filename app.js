@@ -38,13 +38,30 @@ function displayImage(e){
 // Append projects to list in Projects section.
 projectsList.forEach(project => {
     let li = document.createElement('li');
-    let projectName = document.createElement('h4');
+    let projectName = document.createElement('h3');
+    let liLinks = document.createElement('div');
+    liLinks.classList.add('li-link')
+   
+    let a = document.createElement('a');
+    a.innerText = 'View'
+    a.setAttribute('href', project.link);
+    a.setAttribute('target', '_blank');
+
+    let aGithub = document.createElement('a');
+    aGithub.innerText = 'GitHub';
+    aGithub.setAttribute('href', project.github);
+    aGithub.setAttribute('target', '_blank');
+
+    liLinks.appendChild(a);
+    liLinks.appendChild(aGithub);
+    
     projectName.innerText = project.name;
     li.addEventListener('mouseenter', () => {
         projectsImage.style.backgroundImage = `url(${project.image})`;
     });
  
     li.appendChild(projectName);
+    li.appendChild(liLinks)
     domProjectsList.appendChild(li)
 })
 

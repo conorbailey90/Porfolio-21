@@ -58,6 +58,12 @@ p {
 
 a {
   color: var(--main-text-color);
+  text-decoration: none;
+  text-transform: none;
+}
+
+a:hover {
+  color: var(--second-text-color);
 }
 
 li {
@@ -186,11 +192,13 @@ main {
   cursor: pointer;
   border-bottom: 1px solid #ffffff37;
   z-index: 0;
+  justify-content: space-between;
 }
 
-.projects-list li:hover {
-  z-index: 2;
-  color: var(--second-text-color);
+.li-link {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .projects-image {
@@ -205,6 +213,7 @@ main {
   pointer-events: none;
   transition: background-image 0.5s, translate 0s, opacity 0.5s;
   opacity: 0;
+  border: 1px solid rgba(255, 255, 255, 0.205);
 }
 
 /* About  */
@@ -316,7 +325,7 @@ main {
 
 .contact-info {
   width: 500px;
-  height: 40%;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

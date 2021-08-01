@@ -3,32 +3,50 @@ const projectsList = [
     {
         id: 0,
         name: "Memo Board",
-        image: "https://images.unsplash.com/photo-1627386172141-c6fec8bf5aa3?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+        linkType: 'site',
+        link: 'https://conorbailey90.github.io/memo-board/',
+        github: 'https://github.com/conorbailey90/memo-board',
+        image: "./images/memo.png"
     },
     {
         id: 1,
         name: "Blog",
-        image: "https://images.unsplash.com/photo-1626541439398-9f1d3038cd34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+        linkType: 'site',
+        link: 'https://conorbailey90.github.io/blog-2021/',
+        github: 'https://github.com/conorbailey90/blog-2021',
+        image: "./images/blog.png"
     },
     {
         id: 2,
         name: "Drum Sequencer",
-        image: "https://images.unsplash.com/photo-1627308098537-5f26c63570f7?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+        linkType: 'site',
+        link: 'https://conorbailey90.github.io/music-sequencer-app/',
+        github: 'https://github.com/conorbailey90/music-sequencer-app',
+        image: "./images/music.png"
     },
     {
         id: 3,
         name: "Infinite Gallery",
-        image: "https://images.unsplash.com/photo-1627401261874-6be9039d2a48?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+        linkType: 'youtube',
+        link: 'https://www.youtube.com/watch?v=iNcvKWHwrBI&t=1730s',
+        github: 'https://github.com/conorbailey90/infinite-gallery',
+        image: "https://img.youtube.com/vi/iNcvKWHwrBI/maxresdefault.jpg"
     },
     {
         id: 4,
         name: "Expanding Gallery",
-        image: "https://images.unsplash.com/photo-1617046876710-f38e8a1c4f93?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Nnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+        linkType: 'youtube',
+        link: 'https://www.youtube.com/watch?v=Yw76vUtrqdE&t=1096s',
+        github: 'https://github.com/conorbailey90/expanding-photo-gallery',
+        image: "https://img.youtube.com/vi/Yw76vUtrqdE/maxresdefault.jpg"
     },
     {
         id: 5,
         name: "WebGL RGB Distortion",
-        image: "https://images.unsplash.com/photo-1627328561499-a3584d4ee4f7?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+        linkType: 'youtube',
+        link: 'https://www.youtube.com/watch?v=DdQn82X1G3I&t=28s',
+        github: 'https://github.com/conorbailey90/rgb-split-distortion-scroll-effect',
+        image: "https://img.youtube.com/vi/DdQn82X1G3I/maxresdefault.jpg"
     }
 ]
 
