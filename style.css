@@ -39,12 +39,18 @@ h1 {
   font-family: "Morganite";
   letter-spacing: 2px;
   font-size: 5rem;
+  transition: opacity 1s;
+}
+
+h2 {
+  transition: opacity 1s;
 }
 
 h3 {
   font-family: "Morganite";
   letter-spacing: 2px;
   font-size: 2rem;
+  transition: opacity 1s;
 }
 
 p {
@@ -54,12 +60,14 @@ p {
   /* letter-spacing: 1px; */
   font-family: "NeueHaasGrotesk";
   font-style: normal;
+  transition: opacity 1s;
 }
 
 a {
   color: var(--main-text-color);
   text-decoration: none;
   text-transform: none;
+  transition: opacity 2s;
 }
 
 a:hover {
@@ -246,12 +254,16 @@ main {
 
 .resume {
   margin-top: 1rem;
+}
+
+.resume h3 {
   color: var(--second-text-color);
 }
 
 .bio-image {
   height: 300px;
   flex: 3;
+  transition: opacity 1s;
 }
 
 .bio-image-outer {
@@ -314,6 +326,7 @@ main {
   margin-top: 1rem;
   width: 100%;
   justify-content: space-between;
+  transition: opacity 1s;
 }
 
 .tech li {
@@ -350,11 +363,8 @@ svg {
   bottom: 2%;
   right: 5%;
   transform: rotate(180deg);
-}
-
-svg:hover {
+  transition: opacity 1s;
   cursor: pointer;
-  opacity: 0.5;
 }
 
 @media only screen and (max-width: 700px) {
