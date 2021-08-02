@@ -84,7 +84,7 @@ section {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  padding: 80px 5% 2% 5%;
+  padding: 80px 0% 2% 0%;
   overflow: hidden;
 }
 
@@ -94,11 +94,11 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  left: 5%;
+  width: 90%;
   height: 60px;
   background-color: var(--main-bg-color);
   z-index: 1;
-  padding: 0 5vw;
 }
 
 .header-container {
@@ -145,8 +145,8 @@ main {
 .scrollable {
   position: absolute;
   top: 0;
-  left: 50%;
-  width: 100%;
+  left: 5%;
+  width: 90%;
   max-width: 1400px;
   will-change: transform;
 }
@@ -156,14 +156,14 @@ main {
 .welcome {
   position: absolute;
   top: 30%;
-  left: 5%;
+  left: 0;
   width: 400px;
 }
 
 .hero-text {
   position: absolute;
   bottom: 2%;
-  right: 5%;
+  right: 0;
 }
 
 .cta {
