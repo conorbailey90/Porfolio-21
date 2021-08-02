@@ -37,18 +37,20 @@ html {
 
 h1 {
   font-family: "Morganite";
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 5rem;
   transition: opacity 1s;
+  margin-bottom: 1rem;
 }
 
-h2 {
+h2,
+h4 {
   transition: opacity 1s;
 }
 
 h3 {
   font-family: "Morganite";
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 2rem;
   transition: opacity 1s;
 }
@@ -337,7 +339,7 @@ main {
 
 .contact-info {
   width: 500px;
-  height: 150px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -351,6 +353,7 @@ main {
 
 i {
   font-size: 1.8rem;
+  transition: opacity 1s;
 }
 
 i:hover {
@@ -368,7 +371,7 @@ svg {
 
 @media only screen and (max-width: 700px) {
   h1 {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 3rem;
   }
 
@@ -379,7 +382,7 @@ svg {
 
   h3 {
     font-family: "Morganite";
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 2rem;
   }
 

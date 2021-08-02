@@ -1,6 +1,7 @@
 const h1Headers = [...document.querySelectorAll('h1')];
 const h2Headers = [...document.querySelectorAll('h2')];
 const h3Headers = [...document.querySelectorAll('h3')];
+const h4Headers = [...document.querySelectorAll('h4')];
 const paragraphs = [...document.querySelectorAll('p')];
 const listItems = [...document.querySelectorAll('li')];
 const socials = [...document.querySelectorAll('i')];
@@ -9,7 +10,7 @@ const tech =[...document.querySelectorAll('.tech')];
 const svg =[...document.querySelectorAll('svg')];
 
 
-let elements = [h1Headers, h2Headers, h3Headers, paragraphs, listItems, socials, bioImage, svg, tech]
+let elements = [h1Headers, h2Headers, h3Headers,h4Headers, paragraphs, listItems, socials, bioImage, svg, tech]
 
 
 let options = {
