@@ -36,6 +36,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-family: "Morganite";
   letter-spacing: 1px;
