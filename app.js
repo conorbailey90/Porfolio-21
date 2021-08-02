@@ -105,7 +105,7 @@ function smoothScroll(){
     currentX = lerp(currentX, targetX, 0.055).toFixed(2);
     currentY = lerp(currentY, targetY, 0.055).toFixed(2);
 
-    scrollable.style.transform = `translate3d(0, -${current}px, 0)`;
+    scrollable.style.transform = `translate3d(-50%, -${current}px, 0)`;
     projectsImage.style.transform = `translate3d(${currentX - 125}px, ${currentY - 75}px, 0)`;
 
     requestAnimationFrame(smoothScroll)
