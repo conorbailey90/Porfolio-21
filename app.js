@@ -17,7 +17,6 @@ function clickLink(idx){
     }else if(idx === 3){
         window.scrollTo(0, contactSection.offsetTop)
     }
-    // window.scrollTo(0, idx * window.innerHeight);
 }
 
 portfolioDate.innerText = `Portfolio ${new Date().getFullYear().toString().substring(2,4)}`;
@@ -76,13 +75,7 @@ function setDimensions(){
     let vh = window.innerHeight * 0.01;
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-    document.body.style.height = `${scrollable.getBoundingClientRect().height}px`
 }
-
-// Page scroll variables
-let current = 0;
-let target = 0;
-let ease = 0.075;
 
 // Projects image variables
 let currentX = 0;
@@ -95,28 +88,23 @@ window.addEventListener('mousemove', (e) => {
     targetY = e.clientY;
 })
 
-function smoothScroll(){
-
-    // Scroll
-    target = window.scrollY;
-    current = lerp(current, target, ease);
+function moveImage(){
 
     // projects image
     currentX = lerp(currentX, targetX, 0.055).toFixed(2);
     currentY = lerp(currentY, targetY, 0.055).toFixed(2);
 
-    scrollable.style.transform = `translate3d(-50%, -${current}px, 0)`;
     projectsImage.style.transform = `translate3d(${currentX - 125}px, ${currentY - 75}px, 0)`;
 
-    requestAnimationFrame(smoothScroll)
+    requestAnimationFrame(moveImage)
 }
 
 
 
 
 setDimensions();
-window.addEventListener('resize', setDimensions)
-smoothScroll()
+window.addEventListener('resize', setDimensions);
+moveImage();
 
 
 

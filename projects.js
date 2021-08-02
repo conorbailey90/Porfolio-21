@@ -2,20 +2,21 @@
 const projectsList = [
     {
         id: 0,
-        name: "Memo Board",
-        linkType: 'site',
-        link: 'https://conorbailey90.github.io/memo-board/',
-        github: 'https://github.com/conorbailey90/memo-board',
-        image: "./images/memo.png"
-    },
-    {
-        id: 1,
         name: "Blog",
         linkType: 'site',
         link: 'https://conorbailey90.github.io/blog-2021/',
         github: 'https://github.com/conorbailey90/blog-2021',
         image: "./images/blog.png"
     },
+    {
+        id: 1,
+        name: "Memo Board",
+        linkType: 'site',
+        link: 'https://conorbailey90.github.io/memo-board/',
+        github: 'https://github.com/conorbailey90/memo-board',
+        image: "./images/memo.png"
+    },
+    
     {
         id: 2,
         name: "Drum Sequencer",
